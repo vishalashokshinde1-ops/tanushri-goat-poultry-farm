@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Deep forest green theme */
+    --background: 0.18 0.042 145;
+    --foreground: 0.97 0 0;
+    --card: 0.22 0.048 145;
+    --card-foreground: 0.97 0 0;
+    --popover: 0.2 0.044 145;
+    --popover-foreground: 0.97 0 0;
+    --primary: 0.72 0.138 78;
+    --primary-foreground: 0.12 0 0;
+    --secondary: 0.26 0.05 145;
+    --secondary-foreground: 0.97 0 0;
+    --muted: 0.24 0.046 145;
+    --muted-foreground: 0.72 0.02 145;
+    --accent: 0.72 0.138 78;
+    --accent-foreground: 0.12 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.3 0.05 145;
+    --input: 0.28 0.05 145;
+    --ring: 0.72 0.138 78;
+    --chart-1: 0.72 0.138 78;
+    --chart-2: 0.6 0.118 145;
+    --chart-3: 0.398 0.07 145;
+    --chart-4: 0.828 0.189 78;
+    --chart-5: 0.769 0.188 60;
+    --sidebar: 0.15 0.038 145;
+    --sidebar-foreground: 0.97 0 0;
+    --sidebar-primary: 0.72 0.138 78;
+    --sidebar-primary-foreground: 0.12 0 0;
+    --sidebar-accent: 0.22 0.048 145;
+    --sidebar-accent-foreground: 0.97 0 0;
+    --sidebar-border: 0.3 0.05 145;
+    --sidebar-ring: 0.72 0.138 78;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
